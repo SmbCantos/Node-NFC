@@ -12,7 +12,7 @@ device.on('read', function(tag) {
        })
 
        setTimeout(function() {
-       	 jsonfile.writeFile(file, function (err) {
+       	 jsonfile.writeFile(file,'', function (err) {
           console.error(err)
        });
        }, 2000);
